@@ -12,8 +12,11 @@
 </head>
 <body>
    <nav>
-       <a href="{% url 'create_form' %}">Create form</a>
-       <a href="{% url 'home' %}">Home</a>
+        <img src="{% static 'blog/971.jpg' %}">
+        <ul class="nav-links">
+            <li><a class="btn btn-full" href="{% url 'create_form' %}">Create form</a></li>
+            <li><a class="btn btn-outline" href="{% url 'home' %}">Home</a></li>
+        </ul>
    </nav>
    {% block content %}
        
