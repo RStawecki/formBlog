@@ -5,26 +5,28 @@
 
     
 <h1>Blog</h1>
+<div class="row">
+    {% for post in posts %}
+        <div  class="col-6">
+            
+                <a class="title" href="{% url 'detail' post.id%}">{{post.title}}</a>
+                <p>{{post.date}}</p>
+                <p>{{post.description}}</p>
 
-{% for post in posts %}
+                
+                {% if post.link %}
+                
+                    <a href="{{post.link}}" target="_blank"><img src="{{post.image.url}}"></a>  
+                
+                {% else %}
 
-    <a href="{% url 'detail' post.id%}">{{post.title}}</a>
-    <h3>{{post.date}}</h3>
-    <h3>{{post.description}}</h3>
-
-    
-    {% if post.link %}
-    
-        <a href="{{post.link}}" target="_blank"><img src="{{post.image.url}}"></a>  
-     
-    {% else %}
-
-        <img src="{{post.image.url}}">
-        
-    {% endif %}
-
-{% endfor %}
-
+                    <img src="{{post.image.url}}">
+                    
+                {% endif %}
+            
+        </div>
+    {% endfor %}
+</div>
 
 
 

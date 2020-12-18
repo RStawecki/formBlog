@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #232c31;
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+a {
+    margin: 5px;
+    padding: 10px;
+
+}
+
+
+label {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+}
+
+input[type=text]:focus {
+    background-color: #c6b2de;
+}
+
+textarea[name=description]:focus {
+    background-color: #c6b2de;
+}
+
+input[type=url]:focus {
+    background-color: #c6b2de;
+}
+input[type=file]:focus {
+    background-color: #c6b2de;
+    
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+}
+
+p {
+    margin: 5px;
+    padding: 10px;
+}
+button {
+    width: 100%;
+    background-color: #5e3b89;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cls-p {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.create-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.row {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.row-title {
+    margin: 0px 15%;
+}
+.title{
+    color: #6b194c;
+    border-bottom: 2px solid #6b194c;
+    text-decoration: none;
+    padding-bottom: 1px ;
+    width: fit-content;
+}
+.title:hover{
+    border: none;
+    color: rgba(168, 135, 24, 0.685);
+}
+
+.col-6{
+    background-color: grey;
+    padding: 10px;
+    width: 19%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

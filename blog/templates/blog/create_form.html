@@ -3,11 +3,30 @@
 
 <form action="{% url 'create_form' %}" method="POST" enctype="multipart/form-data">
 
-    {{ form.as_p }}
-    {% csrf_token %}
+    <div class="create-form">
+        <p>
+            <label for="id_title">Title:</label> 
+            <input class="cls-p" type="text" name="title" maxlength="120" required="" id="id_title" placeholder="Title...">
+        </p>
+        <p>
+            <label for="id_description">Description:</label> 
+            <textarea class="cls-p" name="description" cols="40" rows="10" required="" id="id_description" placeholder="Your description..."></textarea>
+        </p>
+        <p>
+            <label for="id_image">Image:</label> 
+            <input class="cls-p" type="file" name="image" accept="image/*" required="" id="id_image">
+        </p>
+        <p>
+            <label for="id_link">Link:</label> 
+            <input class="cls-p" type="url" name="link" maxlength="200" id="id_link" placeholder="Link...">
+        </p>
 
-    <button type="Save">SAVE</button>
-
+        <!--{{ form.as_p }}-->
+        {% csrf_token %}
+        <p>    
+        <button type="Save">SAVE</button>
+        </p>
+    </div>
 </form>
 
 {% endblock content %}
